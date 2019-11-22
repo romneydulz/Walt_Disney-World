@@ -1,0 +1,168 @@
+/* Inicio menu top */
+#top-menu {
+    background-color: #222222;
+    height: 30px;
+    border-bottom: 10px;
+}
+
+#top-menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#top-menu a {
+    color: #efefef;
+    text-decoration: none;
+    padding: 5px 20px;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    cursor: default;
+    color: #D3D3D3;
+}
+/* Final menu top */
+
+/* Inicio do botão hamburguer */
+#btn-menu{
+    display: none;
+}
+
+header {
+    font-weight: 600;
+}
+
+.logo img{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+header label{
+    color: #222222;
+    font-size: 50px;
+    display: block;
+    padding: 5px 10px;
+    width: 50px;
+    display: none;
+    border-right: 1px solid #efefef;
+}
+
+header label:hover{
+    background-color: #B69472;
+}
+/* Final do botão hamburguer */
+
+/* Inicio menu */
+.menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    transition: all .5s;
+}
+
+.menu li a {
+    color: black;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    border-right: 1px solid #efefef;
+    border-bottom: transparent solid 3px;
+}
+
+.menu li a:hover {
+    border-bottom: #B69472 solid 3px;
+}
+
+.menu img{
+    padding-right: 20px;
+    padding-top:5px;
+}
+/* Final menu */
+
+/* Inicio slide */
+.slide-pc img {
+    width: 100%;
+}
+
+.slide-mobile img {
+    width: 100%;
+    display: none;
+}
+
+/* final slide */
+
+/* Inicio do css Mobile*/
+@media(max-width: 980px){
+    
+    header label{
+        display: block;
+    }
+
+    .logo img{
+        position: absolute;
+        left:30%;
+    }
+
+    .menu img{
+        padding-right: 20px;
+        padding-top:5px;
+        display: none;
+    }
+    
+    .menu ul{
+        background-color: white;
+        width: 40%;
+        flex-direction: column;
+        margin-left: -40%;
+        position:fixed
+    }
+
+    .menu li a{
+        border-top: 1px solid #efefef;
+        color: black;
+    }
+    .menu li a:hover{
+        color: floralwhite;
+        background-color: #B69472;
+    }
+
+    #btn-menu:checked ~ .menu ul{
+        margin-left: 0;
+    }
+
+    .slide-pc img {
+        display: none;
+    }
+    
+    .slide-mobile img {
+        width: 100%;
+        display: block;
+    }
+}
+/* Final do css Mobile */
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.historia{
+    margin: 0 auto;
+}
+
+.historia img{
+    width: 100%;
+}
+
+.historia h1{
+    font-size:24px;
+    padding: 5px;
+    font-family: cursive;
+}
